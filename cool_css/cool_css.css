@@ -1,4 +1,4 @@
-  :root {
+:root {
    /* background color */
    --bg-alpha:          1;
    --bg-r:              0;
@@ -73,7 +73,7 @@
   --list-padding:      .5;
   --list-decorator:    "> ";
   --margins:            2%;
-}
+ }
 body {
     padding: var(--gloabl-padding);
     background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
@@ -172,16 +172,16 @@ a:link {
     overflow: auto;
     padding: var(--gloabl-padding);
  }
- html, body, svg, foreignObject {
+html, body, svg, foreignObject {
     height: 99%;
     width: 99%;
   }
- h1, h2, h3 {
+h1, h2, h3 {
     color: rgba(var(--header-r), var(--header-g), var(--header-b), var(--header-alpha));
     padding: calc(var(--gloabl-padding) * var(--header-padding));
     font-family: var(--font1-family);
  }
-  a:link {
+a:link {
     text-underline-offset: 20%;
     color: rgba(var(--pop-r), var(--pop-g), var(--pop-b), var(--pop-alpha));
     font-family: var(--font1-family);
@@ -192,7 +192,7 @@ a:link {
     letter-spacing: var(--letter-spacing-f1);
     filter: brightness(var(--brightness));
  }
-  a:hover, emph {
+a:hover, emph {
     top: var(--text-y);
     color: rgba(var(--pop-r), var(--pop-g), var(--pop-b), 0);
     font-size: calc(--font-size) + 1vh);
@@ -207,11 +207,11 @@ a:link {
     filter: brightness(var(--brightness));
     animation: fadein .5s ease forwards, lift-up .5s ease forwards, march .5s ease forwards;
  }
- emph {
+emph {
   color: rgba(var(--pop-r), var(--pop-g), var(--pop-b), 0);
   filter: brightness(100%);
  }
- h1, h2, h3, emp {
+h1, h2, h3, emp {
   text-shadow:
   /*
   shadow-x, shadow-y, shadow-radius, shadow-color-rgba
@@ -239,9 +239,8 @@ a:link {
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing-f1);
   animation: fadein .5s ease forwards, lift-up .5s ease forwards, march .5s ease forwards;
-}
  }
-  @keyframes lightinout {
+@keyframes lightinout {
     0%   { --brightness:  55%; }
     10%  { --brightness:  60%; }
     20%  { --brightness:  65%; }
@@ -254,7 +253,7 @@ a:link {
     90%  { --brightness:  100%;}
     100% { --brightness:  95%; }
   }
-  @keyframes lift-up {
+@keyframes lift-up {
     0%  { --text-y: -1px; }
     10% { --text-y: -2px; }
     20% { --text-y: -3px; }
@@ -266,8 +265,8 @@ a:link {
     80% { --text-y: -9px; }
     90% { --text-y: -10px;}
     100 { --text-y: -11px;}
- }
-  @keyframes march {
+  }
+@keyframes march {
     5% {
       text-shadow:
       calc(var(--shadow-x-max) * 1px) calc(var(--shadow-y-max) * 1px) 0 rgba(calc(var(--pop-r) * .9), calc(var(--pop-g) * .9), calc(var(--pop-b) * .9), calc(var(--pop-alpha) / 1 )),
@@ -378,7 +377,7 @@ a:link {
       calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--shadow-r), var(--shadow-g), var(--shadow-b), var(--shadow-alpha)),
       calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--pop-r), var(--pop-g), var(--pop-b), var(--shadow-alpha));}
    }
-   @keyframes fadein {
+@keyframes fadein {
     0%   {
         --shadow-alpha: 0%,
         --brightness: 55%,
