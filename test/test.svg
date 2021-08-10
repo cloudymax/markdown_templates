@@ -2,6 +2,72 @@
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
+		             :root {
+                                        /* background color */
+                                        --bg-alpha:          1;
+                                        --bg-r:              0;
+                                        --bg-g:              0;
+                                        --bg-b:              0;
+                                        --bg:                rgb(var(--bg-r), var(--bg-b), var(--bg-g));
+                                        /* header color */
+                                        --header-alpha:      1;
+                                        --header-g:          190;
+                                        --header-r:          190;
+                                        --header-b:          190;
+                                        --header:            rgb(var(--header-r), var(--header-g), var(--header-b));
+                                        --header-brightness:  .6;
+                                        /* pop color */
+                                        --pop-alpha:         1;
+                                        --pop-r:             100;
+                                        --pop-g:             231;
+                                        --pop-b:             255;
+                                        --pop:               rgb(var(--pop-r), var(--pop-g), var(--pop-b));
+                                        /* shadow color */
+                                        --shadow-alpha:      .8;
+                                        --shadow-r:          0;
+                                        --shadow-g:          10;
+                                        --shadow-b:          10;
+                                        --shadow:            rgb(var(--shadow-r), var(--shadow-g), var(--shadow-b));
+                                        /* background gradient */
+                                        --gradient-color1:   rgba(10, 10, 10, 1);
+                                        --gradient-c1-amt:   20%;
+                                        --gradient-color2:   rgba(12, 16, 29, .6);
+                                        --gradient-c2-amt:   100%;
+                                        --gradient-x:        -111.8%;
+                                        --gradient-y:        -10.3%;
+                                        /* Fonts */
+                                        --font1-family:      'Source Code Pro', monospace;
+                                        --font2-family:      'Source Sans Pro', sans-serif;
+                                        --font-size:          20px;
+                                        --letter-spacing-f1:  2px;
+                                        --letter-spacing-f2:  2px;
+                                        --line-height:        30px;
+                                        /* Font size scale multipliers */
+                                        --h1-multiplier:     2;
+                                        --h2-multiplier:     1.5;
+                                        --h3-multiplier:     1.2;
+                                        --list-multiplier:   1.2;
+                                        --link-multiplier:   1;
+                                        * Borders */
+                                        -border-color:      rgba(0,0,0,1);
+                                        -border-thickness:  1%;
+                                        -border-radius:     1%;
+                                        * Shadows */
+                                        -shadow-x-max:      .3;
+                                        -shadow-y-max:      1;
+                                        -shadow-radius:     15px;
+                                        -brightness:        90%;
+                                        * 3d movement */
+                                        -text-y:       -2px;
+                                        -text-x:       -5px;
+                                        -text-z:       -0px;
+                                        * padding  */
+                                        -gloabl-padding:    10px;
+                                        -header-padding:    2;
+                                        -list-padding:      .5;
+                                        -list-decorator:    "> ";
+                                        -margins:            2%;
+                               }
 				@keyframes rotate {
 					0% {
 						transform: rotate(3deg);
@@ -57,6 +123,24 @@
 					color: white;
 					text-align: center;
 				}
+				.flex-container {
+                                        font-family: var(--font2-family);
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: left;
+                                        justify-content: inter-item;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
+                                        background-color: rgba(var(--bg), var(--bg-alpha));
+                                        background-size: 100% 100%;
+                                        animation: fadein 2s linear 1 forwards;
+                                        border-color: var(--border-radius);
+                                        border-radius: var(--border-radius);
+                                        text-align: left;
+                                        overflow: auto;
+                                        padding: var(--gloabl-padding);
+                                }
 				h1 {
 					font-size: 50px;
 					line-height: 1.3;
