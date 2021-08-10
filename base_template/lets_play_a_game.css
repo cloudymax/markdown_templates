@@ -1,0 +1,160 @@
+  :root {
+   --background-color:  rgba(0,0,0,.1);
+   --highlight-color:   rgba(0,0,0,0);
+   --header-background: rgba(0,0,0,.1);
+   --border-color:      rgba(0,0,0,.4);
+   --header-color:      rgba(200,200,200,1);
+   --alt-header-color:  rgba(200,200,200,1);
+   --text-color:        rgba(200,200,200,1);
+   --text-3d-color:     rgba(100,100,100,1);
+   --link-color:        rgba(100,250,155,1);
+   --pop-color:         rgba(250,150,50,1);
+   --border-thickness:  5px;
+   --border-radius:     10px;
+   --font1-family:      'Press Start 2p', cursive;
+   --font1-size:        100%;
+   --h1-multiplier:     3;
+   --h2-multiplier:     2.5;
+   --h3-multiplier:     2;
+   --font2-family:      'Ubuntu Condensed', sans-serif;
+   --font2-size:        200%;
+   --gradient-color1:   rgba(18,35,90,.5);
+   --gradient-c1-amt:   40%;
+   --gradient-color2:   rgba(10,87,200,.5);
+   --gradient-c2-amt:   100%;
+   --gradient-x:        -111.8%;
+   --gradient-y:        -10.3%;
+   --shadow-x:          4px;
+   --shadow-y:          2px;
+   --shadow-radius:     5px;
+   --shadow-color:      rgba(0,0,0,1);
+   }
+   body {
+       background-color: var(--background-color);
+       background-image:  radial-gradient( circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt) );
+       text-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-radius) var(--shadow-color);
+   }
+   p {
+      animation: 5s ease 0s normal forwards 1 fadeIn;
+      background-color: var(--background-color);
+      border: var(--border-thickness) solid var(--border-color);
+      border-radius: var(--border-radius);
+      font-size: var(--font2-size);
+      font-family: var(--font2-family);
+      color: var(--text-color);
+      text-align: justify;
+      text-justify: inter-word;
+      line-height: 1.4;
+      letter-spacing: .7px;
+      padding: 1%;
+      margin: 1%
+   }
+   h1 {
+       color: var(--header-color);
+       background-color: var(--header-background);
+       font-size: calc(var(--font1-size) * var(--h1-multiplier));
+       font-family: var(--font1-family);
+       letter-spacing: -2px;
+       text-align: center;
+       text-shadow:
+       0 1px 0 var(--text-3d-color),
+       0 2px 0 var(--text-3d-color),
+       0 3px 0 var(--text-3d-color),
+       0 4px 0 var(--text-3d-color),
+       0 12px 5px var(--shadow-color);
+   }
+   h2 {
+       color: var(--header-color);
+       background-color: var(--highlight-color);
+       font-size: calc(var(--font1-size) * var(--h2-multiplier));
+       line-height: 1;
+       font-family: var(--font1-family);
+   }
+   h3 {
+       color: var(--header-color);
+       font-size: calc(var(--font1-size) * var(--h3-multiplier));
+       background-color: var(--header-background);
+       text-indent: 5% each-line;
+       line-height: 1.5;
+       font-family: var(--font1-family);
+   }
+   h4 {
+       color: var(--header-color);
+       background-color: rgba(0,0,0,0);
+       font-family: var(--font1-family);
+       background-color: var(--header-background);
+   }
+   ul {
+      padding: 2%;
+      margin: 0;
+      font-size: var(--font2-size);
+      font-family: var(--font2-family);
+      color: var(--text-color);
+      line-height: 1.4;
+      letter-spacing: .7px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: inter-item;
+      list-style-type: circle;
+   }
+   ol {
+      padding: 2%;
+      margin: 0;
+      list-style-type: numeric;
+      padding: 1%;
+      font-size: var(--font2-size);
+      font-family: var(--font2-family);
+      color: var(--text-color);
+      line-height: 1.4;
+      letter-spacing: .7px;
+      list-style-type: circle;
+   }
+   li {
+      text-indent: 1%;
+   }
+   emp {
+      background-color: var(--highlight-color);
+      color: var(--pop-color);
+      line-height: 1.3;
+      letter-spacing: .5px;
+      text-align: justify;
+      text-justify: inter-word;
+      font-size: var(--font1-size);
+      font-family: var(--font1-family);
+   }
+   a:link {
+       color: var(--link-color);
+       background-color: var(--highlight-color);
+       text-decoration: underline;
+       font-family: var(--font1-family);
+       font-size: var(--font1-size);
+   }
+   .container {
+      font-family: var(--font2-family);
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: inter-item;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
+      background-size: 100% 100%;
+      animation: fadeinout 4s linear 1 forwards;
+      border-color: var(--border-radius);
+      border-radius: var(--border-radius);
+      color: var(--text-color);
+      text-align: left;;
+  }
+  html, body, svg, foreignObject {
+    height: 99%;
+    width: 99%;
+    margin: 0;
+    padding: 1%;
+  }
+  @keyframes fadeinout {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
