@@ -4,8 +4,15 @@
 			<style>
 			</style>
 			<div class="container">
-				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
-				<p>Click to see the source</p>
+				<h1>this is a demo</h1>
+					<p>This is some text showing how the CSS converts readme into a webpage</p>
+					<h2> look at these datas </h2>
+						<ul> Check Out My List:
+							<li>this is an item in my list</li>
+							<li>this item is <emp>emphasized</emp>
+							<li>this one is done <emph>differently</emph>.</li>
+							<li>and this one has a <a href="www.cataas.come">Link</a>
+				        </ul>
 			</div>
 		</div>
 	</foreignObject>
