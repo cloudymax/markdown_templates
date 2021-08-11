@@ -5,9 +5,9 @@
 :root {
    /* background color */
    --bg-alpha:          1;
-   --bg-r:              0;
-   --bg-g:              0;
-   --bg-b:              0;
+   --bg-r:              1;
+   --bg-g:              1;
+   --bg-b:              1;
    --bg:                rgb(var(--bg-r), var(--bg-b), var(--bg-g));
 
    /* header color */
@@ -82,7 +82,7 @@
 body {
     padding: var(--gloabl-padding);
     background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
-    background-color: rgba(var(--bg), var(--bg-alpha));
+    background-color: rgb(var(--bg-r), var(--bg-b), var(--bg-g));
     font-size: var(--font-size);
     margin-top: var(--margin);
     margin-bottom: var(--margin);
@@ -98,7 +98,7 @@ body {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
-    background-color: rgba(var(--bg), var(--bg-alpha));
+    background-color: rgb(var(--bg-r), var(--bg-b), var(--bg-g));
     background-size: 100% 100%;
     animation: fadein 2s linear 1 forwards;
     border-color: var(--border-radius);
