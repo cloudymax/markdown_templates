@@ -190,6 +190,7 @@ a:link {
     font-size: calc(var(--font-size) * var(--link-multiplier));
 }
 a:hover, emph {
+    animation: fadein .5s ease forwards, lift-up .5s ease forwards, march .5s ease forwards;
     top: var(--text-y);
     color: var(--pop);
     font-size: calc(--font-size) + 1vh);
