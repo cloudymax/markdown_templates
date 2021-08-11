@@ -460,197 +460,199 @@ h1, h2, h3, emp {
 }
 </style>
 <div class="container">
-<html>
- <head>
- </head>
- <body>
-  <h1>
-   <a href="https://multipass.run/">
+
+  <html>
+
+<head>
+</head>
+
+<body>
+    <h1>
+        <a href="https://multipass.run/">
     multipass
    </a>
-  </h1>
-  <p>
-   Multipass is a lightweight VM manager for Linux, Windows and macOS. It's designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.
-  </p>
-  <p>
-   Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.
-  </p>
-  <ul>
-   <li>
-    <a href="https://github.com/canonical/multipass">
+    </h1>
+    <p>
+        Multipass is a lightweight VM manager for Linux, Windows and macOS. It's designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead.
+        It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.
+    </p>
+    <p>
+        Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.
+    </p>
+    <ul>
+        <li>
+            <a href="https://github.com/canonical/multipass">
      github.com/canonical/multipass
     </a>
-   </li>
-  </ul>
-  <ul>
-   <li>
-    <a href="https://www.redhat.com/en/topics/virtualization/what-is-KVM">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="https://www.redhat.com/en/topics/virtualization/what-is-KVM">
      KVM
     </a>
-   </li>
-  </ul>
-  <p>
-   <strong>
+        </li>
+    </ul>
+    <p>
+        <strong>
     What makes it unique versus other VM solutions?
    </strong>
-  </p>
-  <ul>
-   <li>
-    It's very minimal, it only makes Ubuntu cloud-compatible VMs
-   </li>
-  </ul>
-  <ul>
-   <li>
-    provides a consistent Ubuntu experince w/ the benefit of cliud-init.
-   </li>
-  </ul>
-  <ul>
-   <li>
-    SSH disabled by default, you use cloud-init to place keys and bootstrap your users
-   </li>
-  </ul>
-  <ul>
-   <li>
-    much more analogous to a cloud-native workflow - especially GCP
-   </li>
-  </ul>
-  <ul>
-   <li>
-    installs natively w/ package manegers to mac/linux/windows
-   </li>
-  </ul>
-  <ul>
-   <li>
-    can be managed by Oracle Virtual Box for more customization
-   </li>
-  </ul>
-  <p>
-   <strong>
+    </p>
+    <ul>
+        <li>
+            It's very minimal, it only makes Ubuntu cloud-compatible VMs
+        </li>
+    </ul>
+    <ul>
+        <li>
+            provides a consistent Ubuntu experince w/ the benefit of cliud-init.
+        </li>
+    </ul>
+    <ul>
+        <li>
+            SSH disabled by default, you use cloud-init to place keys and bootstrap your users
+        </li>
+    </ul>
+    <ul>
+        <li>
+            much more analogous to a cloud-native workflow - especially GCP
+        </li>
+    </ul>
+    <ul>
+        <li>
+            installs natively w/ package manegers to mac/linux/windows
+        </li>
+    </ul>
+    <ul>
+        <li>
+            can be managed by Oracle Virtual Box for more customization
+        </li>
+    </ul>
+    <p>
+        <strong>
     Thoughts
-   </strong>
-   :
-  </p>
-  <ul>
-   <li>
-    fastest option for getting a Ubuntu LTS virtual machine up and running
-   </li>
-  </ul>
-  <ul>
-   <li>
-    not very automation friendly - ansible seems to hate it - WIP though
-   </li>
-  </ul>
-  <ul>
-   <li>
-    potentially a good solution for getting around
-    <a href="https://github.com/docker/for-mac/issues/3677">
+   </strong> :
+    </p>
+    <ul>
+        <li>
+            fastest option for getting a Ubuntu LTS virtual machine up and running
+        </li>
+    </ul>
+    <ul>
+        <li>
+            not very automation friendly - ansible seems to hate it - WIP though
+        </li>
+    </ul>
+    <ul>
+        <li>
+            potentially a good solution for getting around
+            <a href="https://github.com/docker/for-mac/issues/3677">
      Docker for MacOS's horrible IO issues
-    </a>
-    w/ mount points
-   </li>
-  </ul>
-  <h2>
-   install
-  </h2>
-  <p>
-   Linux:
-  </p>
-  <p>
-   ```bash
-  </p>
-  <p>
-   sudo snap install multipass
-  </p>
-  <p>
-   ```
-  </p>
-  <p>
-   Windows:
-  </p>
-  <p>
-   Download from
-   <a href="https://multipass.run/download/windows">
+    </a> w/ mount points
+        </li>
+    </ul>
+    <h2>
+        install
+    </h2>
+    <p>
+        Linux:
+    </p>
+    <p>
+        ```bash
+    </p>
+    <p>
+        sudo snap install multipass
+    </p>
+    <p>
+        ```
+    </p>
+    <p>
+        Windows:
+    </p>
+    <p>
+        Download from
+        <a href="https://multipass.run/download/windows">
+    link
+   </a> or use WSL
+    </p>
+    <p>
+        MacOS:
+    </p>
+    <p>
+        Download from
+        <a href="https://multipass.run/download/macos">
     link
    </a>
-   or use WSL
-  </p>
-  <p>
-   MacOS:
-  </p>
-  <p>
-   Download from
-   <a href="https://multipass.run/download/macos">
-    link
-   </a>
-  </p>
-  <p>
-   or
-  </p>
-  <p>
-   ```bash
-  </p>
-  <p>
-   curl -O
-   <a href="https://multipass.run/download/macos">
+    </p>
+    <p>
+        or
+    </p>
+    <p>
+        ```bash
+    </p>
+    <p>
+        curl -O
+        <a href="https://multipass.run/download/macos">
     https://multipass.run/download/macos
    </a>
-  </p>
-  <p>
-   ```
-  </p>
-  <p>
-   <a href="https://multipass.run/docs/launch-command">
+    </p>
+    <p>
+        ```
+    </p>
+    <p>
+        <a href="https://multipass.run/docs/launch-command">
     multipass launch docs
    </a>
-  </p>
-  <p>
-   <a href="https://cloudinit.readthedocs.io/en/latest/topics/examples.html">
+    </p>
+    <p>
+        <a href="https://cloudinit.readthedocs.io/en/latest/topics/examples.html">
     cloud init
    </a>
-  </p>
-  <p>
-   ```bash
-  </p>
-  <p>
-   multipass launch --name VirtualBradley \
-  </p>
-  <pre><code>--cpus 2 \
+    </p>
+    <p>
+        ```bash
+    </p>
+    <p>
+        multipass launch --name VirtualBradley \
+    </p>
+    <pre><code>--cpus 2 \
 </code></pre>
-  <pre><code>--disk 3G \
+    <pre><code>--disk 3G \
 </code></pre>
-  <pre><code>--mem 2G
+    <pre><code>--mem 2G
 </code></pre>
-  <p>
-   multipass shell VirtualBradley
-  </p>
-  <h2>
-   VirtualBox integration
-  </h2>
-  <p>
-   ```bash
-  </p>
-  <h1>
-   enable
-  </h1>
-  <p>
-   sudo multipass set local.driver=virtualbox
-  </p>
-  <h1>
-   disable
-  </h1>
-  <p>
-   sudo multipass set local.driver=hyperkit
-  </p>
-  <h1>
-   other backends
-  </h1>
-  <p>
-   libvirt|hyperv
-  </p>
-  <p>
-   ```
-  </p>
- </body>
+    <p>
+        multipass shell VirtualBradley
+    </p>
+    <h2>
+        VirtualBox integration
+    </h2>
+    <p>
+        ```bash
+    </p>
+    <h1>
+        enable
+    </h1>
+    <p>
+        sudo multipass set local.driver=virtualbox
+    </p>
+    <h1>
+        disable
+    </h1>
+    <p>
+        sudo multipass set local.driver=hyperkit
+    </p>
+    <h1>
+        other backends
+    </h1>
+    <p>
+        libvirt|hyperv
+    </p>
+    <p>
+        ```
+    </p>
+</body>
+
 </html>
   
 </div>
