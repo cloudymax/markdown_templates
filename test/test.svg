@@ -1,5 +1,5 @@
-<svg fill="none" height="100vh" width="100vw" viewbox="100%" xmlns="http://www.w3.org/2000/svg">
-<foreignObject background-size="contain" width="100h" height="100vw">
+<svg fill="none" background-size="contain" viewbox="100%" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<foreignObject width="100%" height="100%" background-size="contain";>
 <div height="100vh" width="100vw" xmlns="http://www.w3.org/1999/xhtml">
 <style>
 :root {
