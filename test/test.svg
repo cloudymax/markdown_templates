@@ -190,7 +190,7 @@ a:link {
     font-size: calc(var(--font-size) * var(--link-multiplier));
 }
 a:hover, emph {
-    animation: fadein .5s ease forwards, lift-up .5s ease forwards, march .5s ease forwards;
+    animation: fadein 1s ease forwards, lift-up 1s ease forwards, march .5s ease forwards;
     top: var(--text-y);
     color: var(--pop);
     font-size: calc(--font-size) + 1vh);
@@ -206,6 +206,7 @@ a:hover, emph {
 }
 h1, h2, h3, emp {
   text-shadow:
+  animation: fadein 1s ease forwards, lift-up 1s ease forwards, march .5s ease forwards;
   calc(var(--shadow-x-max) * 1px) calc(var(--shadow-y-max) * 1px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha))),
   calc(var(--shadow-x-max) * 2px) calc(var(--shadow-y-max) * 2px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha) - .2 )),
   calc(var(--shadow-x-max) * 3px) calc(var(--shadow-y-max) * 3px) 0 rgba(calc(var(--header-r) * .8), calc(var(--header-g) * .8), calc(var(--header-b) * .8), calc(var(--header-alpha) - .3 )),
