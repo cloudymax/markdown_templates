@@ -1,6 +1,6 @@
 <div align="center">
 	<br>
-        <img src="https://github.com/cloudymax/markdown_templates/blob/main/test/test.svg" width="200%" height="5000">
+        <img src="./test.svg" width="200%" height="5000">
 	</a>
 	<br>
 </div>
