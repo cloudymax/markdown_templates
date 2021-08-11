@@ -130,6 +130,39 @@ h3 {
     font-size: calc(var(--font-size) * var(--h3-multiplier));
     padding: calc(var(--gloabl-padding) * var(--header-padding));
 }
+ul {
+    color: rgba(var(--pop) var(--pop-alpha));
+    font-size: calc(var(--font-size) * var(--list-multiplier));
+    padding: calc(var(--gloabl-padding) * var(--list-padding));
+    font-family: var(--font2-family);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing-f1);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: inter-item;
+    list-style-type: var(--list-decorator);
+    list-style-position: inside;
+}
+ol {
+    color: rgba(var(--pop) var(--pop-alpha));
+    padding: calc(var(--gloabl-padding) * var(--list-padding));
+    list-style-type: numeric;
+    font-family: var(--font2-family);
+    font-size: calc(var(--font-size) * var(--list-multiplier));
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing-f2);
+    list-style-type: var(--list-decorator);
+    list-style-position: inside;
+}
+li {
+    color: rgba(var(--header) var(--header-alpha));
+    font-size: var(--font-size);
+    text-indent: 1%;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing-f1);
+    background-color: rgba(0,0,0,0);
+}
 </style>
 <div class="flex-container">
 <h1>this is a demo</h1>
