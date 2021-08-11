@@ -107,6 +107,29 @@ body {
     overflow: auto;
     padding: var(--gloabl-padding);
 }
+p {
+    border: var(--border-thickness) solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-family: var(--font2-family);
+    text-indent: 0%;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing-f1);
+    padding: var(--gloabl-padding);
+}
+h1 {
+    font-size: calc(var(--font-size) * var(--h1-multiplier));
+    text-align: center;
+}
+h2 {
+    font-size: calc(var(--font-size) * var(--h2-multiplier));
+    padding: calc(var(--gloabl-padding) * var(--header-padding));
+}
+h3 {
+    font-size: calc(var(--font-size) * var(--h3-multiplier));
+    padding: calc(var(--gloabl-padding) * var(--header-padding));
+}
 </style>
 <div class="flex-container">
 <h1>this is a demo</h1>
