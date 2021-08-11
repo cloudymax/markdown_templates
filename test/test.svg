@@ -206,16 +206,32 @@ a:hover, emph {
 }
 h1, h2, h3, emp {
   text-shadow:
+  /*
+  shadow-x, shadow-y, shadow-radius, shadow-color-rgba
+  Ray March effect
+     Draw a colored shadow at <x,y> position below the original text
+     each new shadow is darker and less opaque
+  */
   calc(var(--shadow-x-max) * 1px) calc(var(--shadow-y-max) * 1px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha))),
   calc(var(--shadow-x-max) * 2px) calc(var(--shadow-y-max) * 2px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha) - .2 )),
   calc(var(--shadow-x-max) * 3px) calc(var(--shadow-y-max) * 3px) 0 rgba(calc(var(--header-r) * .8), calc(var(--header-g) * .8), calc(var(--header-b) * .8), calc(var(--header-alpha) - .3 )),
   calc(var(--shadow-x-max) * 4px) calc(var(--shadow-y-max) * 4px) 0 rgba(calc(var(--header-r) * .8), calc(var(--header-g) * .8), calc(var(--header-b) * .8), calc(var(--header-alpha) - .4 )),
+  /* Hard Shadow
+     ground layer, doesnt have to be a shadow can be screen-space reflection
+  */
   calc(var(--shadow-x-max) * 8px) calc(var(--shadow-y-max) * 8px) 0 rgba(calc(var(--shadow-r) * .9), calc(var(--shadow-g) * .9), calc(var(--shadow-b) * .9), calc(var(--header-alpha))),
+  /* Soft Shadow
+    another shadow layer
+  */
   calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--shadow-r), var(--shadow-g), var(--shadow-b), var(--shadow-alpha)),
+  /* Glow - illumination
+    a glow layer - attcach to text pos
+  */
   calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--header-r), var(--header-g), var(--header-b), var(--header-brightness));
   text-indent: 5% each-line;
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing-f1);
+  animation: fadein .5s ease forwards, lift-up .5s ease forwards, march .5s ease forwards;
 }
 @keyframes lightinout {
     0%   { --brightness:  55%; }
