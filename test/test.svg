@@ -78,7 +78,6 @@
   --list-decorator:    "> ";
   --margins:            2%;
  }
-
 body {
     padding: var(--gloabl-padding);
     background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
@@ -106,6 +105,10 @@ body {
     text-align: left;
     overflow: auto;
     padding: var(--gloabl-padding);
+}
+html, body, svg, foreignObject {
+    height: 99%;
+    width: 99%;
 }
 p {
     border: var(--border-thickness) solid var(--border-color);
