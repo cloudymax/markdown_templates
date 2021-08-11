@@ -171,6 +171,20 @@ li {
     letter-spacing: var(--letter-spacing-f1);
     background-color: rgba(0,0,0,0);
 }
+emp {
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing-f1);
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: calc(var(--font-size) * var(--list-multiplier));
+    font-family: var(--font2-family);
+}
+a:link {
+    color: rgba(var(--pop) var(--pop-alpha));
+    text-decoration: none;
+    font-family: var(--font1-family);
+    font-size: calc(var(--font-size) * var(--link-multiplier));
+}
 </style>
 <div class="flex-container">
 <h1>this is a demo</h1>
