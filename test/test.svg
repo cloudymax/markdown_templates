@@ -83,7 +83,7 @@ body {
     justify-content: inter-item;
     border: var(--border-radius) var(--border-style) var(--header);
     text-align: left;
-    overflow: auto;
+    overflow: hidden;
     padding: var(--gloabl-padding);
     height: 90%;
     width: 90%;
@@ -100,6 +100,7 @@ svg{
     position: inherit;
     background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
     animation: gradientBackground 10s ease infinite;
+    background-size: 400% 400%;
 }
 html {
     height: 100%;
