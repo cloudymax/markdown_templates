@@ -165,12 +165,6 @@ emp {
     font-size: calc(var(--font-size) * var(--list-multiplier));
     font-family: var(--font2-family);
 }
-				
-h1, h2, h3, emp {
-  text-indent: 5% each-line;
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing-f1);
-}
 
 			</style>
 			<div class="flex-container">
