@@ -8,14 +8,14 @@
    --bg-r:              1;
    --bg-g:              1;
    --bg-b:              1;
-   --bg:                rgb(var(--bg-r), var(--bg-b), var(--bg-g));
+   --bg:                rgba(var(--bg-r), var(--bg-b), var(--bg-g), var(--bg-alpha));
 
    /* header color */
    --header-alpha:      1;
    --header-g:          190;
    --header-r:          190;
    --header-b:          190;
-   --header:            rgb(var(--header-r), var(--header-g), var(--header-b));
+   --header:            rgba(var(--header-r), var(--header-g), var(--header-b), var(--header-alpha));
    --header-brightness:  .6;
 
    /* pop color */
@@ -23,14 +23,14 @@
    --pop-r:             100;
    --pop-g:             231;
    --pop-b:             255;
-   --pop:               rgb(var(--pop-r), var(--pop-g), var(--pop-b));
+   --pop:               rgba(var(--pop-r), var(--pop-g), var(--pop-b), var(--pop-alpha));
 
    /* shadow color */
    --shadow-alpha:      .8;
    --shadow-r:          0;
    --shadow-g:          10;
    --shadow-b:          10;
-   --shadow:            rgb(var(--shadow-r), var(--shadow-g), var(--shadow-b));
+   --shadow:            rgba(var(--shadow-r), var(--shadow-g), var(--shadow-b), var(--shadow-alpha));
 
    /* background gradient */
    --gradient-color1:   rgba(10, 10, 10, 1);
@@ -82,7 +82,7 @@
 body {
     padding: var(--gloabl-padding);
     background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
-    background-color: rgba(var(--bg-r), var(--bg-b), var(--bg-g), var(--bg-alpha));
+    background-color: var(--bg);
     font-size: var(--font-size);
     margin-top: var(--margin);
     margin-bottom: var(--margin);
@@ -98,7 +98,7 @@ body {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
-    background-color: rgba(var(--bg-r), var(--bg-b), var(--bg-g), var(--bg-alpha));
+    background-color: var(--bg);
     background-size: 100% 100%;
     border-color: var(--border-radius);
     border-radius: var(--border-radius);
@@ -135,12 +135,12 @@ h3 {
     padding: calc(var(--gloabl-padding) * var(--header-padding));
 }
 h1, h2, h3, emp {
-    color: rgba(var(--header-r), var(--header-g), var(--header-b), var(--header-alpha));
+    color: var(--header);
     padding: calc(var(--gloabl-padding) * var(--header-padding));
     font-family: var(--font1-family);
 }
 ul {
-    color: rgba(var(--pop) var(--pop-alpha));
+    color: var(--pop);
     font-size: calc(var(--font-size) * var(--list-multiplier));
     padding: calc(var(--gloabl-padding) * var(--list-padding));
     font-family: var(--font2-family);
@@ -154,7 +154,7 @@ ul {
     list-style-position: inside;
 }
 ol {
-    color: rgba(var(--pop) var(--pop-alpha));
+    color: var(--pop);
     padding: calc(var(--gloabl-padding) * var(--list-padding));
     list-style-type: numeric;
     font-family: var(--font2-family);
@@ -165,7 +165,7 @@ ol {
     list-style-position: inside;
 }
 li {
-    color: rgba(var(--header) var(--header-alpha));
+    color: var(--header);
     font-size: var(--font-size);
     text-indent: 1%;
     line-height: var(--line-height);
@@ -181,18 +181,18 @@ emp {
     font-family: var(--font2-family);
 }
 emph {
-  color: rgba(var(--pop-r), var(--pop-g), var(--pop-b), 0);
+  color: var(--pop);
   filter: brightness(100%);
 }
 a:link {
-    color: rgba(var(--pop) var(--pop-alpha));
+    color: var(--pop);
     text-decoration: none;
     font-family: var(--font1-family);
     font-size: calc(var(--font-size) * var(--link-multiplier));
 }
 a:hover, emph {
     top: var(--text-y);
-    color: rgba(var(--pop-r), var(--pop-g), var(--pop-b), 0);
+    color: var(--pop);
     font-size: calc(--font-size) + 1vh);
     text-shadow:
     calc(var(--shadow-x-max) * 1px) calc(var(--shadow-y-max) * 1px) 0 rgba(calc(var(--pop-r) * .9), calc(var(--pop-g) * .9), calc(var(--pop-b) * .9), calc(var(--pop-alpha) / 1 )),
