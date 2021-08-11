@@ -35,7 +35,7 @@
    /* background gradient */
    --gradient-color1:   rgba(10, 10, 10, 1);
    --gradient-c1-amt:   20%;
-   --gradient-color2:   rgba(12, 16, 29, .6);
+   --gradient-color2:   rgba(12, 16, 29, 1);
    --gradient-c2-amt:   100%;
    --gradient-x:        -111.8%;
    --gradient-y:        -10.3%;
@@ -47,7 +47,7 @@
    --letter-spacing-f1:  2px;
    --letter-spacing-f2:  2px;
    --line-height:        30px;
-   --text-color:         rgb(210, 210, 210);
+   --text-color:         rgba(210, 210, 210, 1);
 
    /* Font size scale multipliers */
    --h1-multiplier:     2;
