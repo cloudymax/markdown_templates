@@ -4,9 +4,6 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300');
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300');
 :root {
    /* background color */
    --bg-alpha:         .1;
@@ -96,8 +93,8 @@ body {
     padding: var(--gloabl-padding);
 }
 html, body, svg, foreignObject, .container {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 500vw;
 }
 p {
     border: var(--border-radius) var(--border-style) var(--header);
