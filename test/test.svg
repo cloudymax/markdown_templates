@@ -1,10 +1,3 @@
-<html>
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&family=Source+Sans+Pro:wght@300&    display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cool_css.css">
-</head>
 <svg fill="none" height="100vh" width="100vw" viewbox="100%" xmlns="http://www.w3.org/2000/svg">
 <foreignObject background-size="contain" width="100h" height="100vw">
 <div height="100vh" width="100vw" xmlns="http://www.w3.org/1999/xhtml">
@@ -455,4 +448,3 @@ h1, h2, h3, emp {
 </div>
 </foreignObject>
 </svg>
-</html>
