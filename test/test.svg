@@ -1,11 +1,11 @@
 <svg fill="none" height="100%" width="100%" viewbox="100%" xmlns="http://www.w3.org/2000/svg">
-	<foreignObject background-size="contain" width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			</head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		</head>
-			<style>
+<foreignObject background-size="contain" width="100%" height="100%">
+<div xmlns="http://www.w3.org/1999/xhtml">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
 :root {
    /* background color */
    --bg-alpha:          1;
@@ -81,7 +81,8 @@
   --list-padding:      .5;
   --list-decorator:    "> ";
   --margins:            2%;
- }
+}
+
 body {
     padding: var(--gloabl-padding);
     background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
@@ -91,7 +92,8 @@ body {
     margin-bottom: var(--margin);
     margin-right: var(--margin);
     margin-left: var(--margin);
- }
+}
+				
 p {
     border: var(--border-thickness) solid var(--border-color);
     border-radius: var(--border-radius);
@@ -102,19 +104,23 @@ p {
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing-f1);
     padding: var(--gloabl-padding);
- }
+}
+
 h1 {
     font-size: calc(var(--font-size) * var(--h1-multiplier));
     text-align: center;
- }
+}
+
 h2 {
     font-size: calc(var(--font-size) * var(--h2-multiplier));
     padding: calc(var(--gloabl-padding) * var(--header-padding));
- }
+}
+
 h3 {
     font-size: calc(var(--font-size) * var(--h3-multiplier));
     padding: calc(var(--gloabl-padding) * var(--header-padding));
- }
+}
+
 ul {
     color: rgba(var(--pop) var(--pop-alpha));
     font-size: calc(var(--font-size) * var(--list-multiplier));
@@ -129,6 +135,7 @@ ul {
     list-style-type: var(--list-decorator);
     list-style-position: inside;
  }
+
 ol {
     color: rgba(var(--pop) var(--pop-alpha));
     padding: calc(var(--gloabl-padding) * var(--list-padding));
@@ -140,6 +147,7 @@ ol {
     list-style-type: var(--list-decorator);
     list-style-position: inside;
  }
+
 li {
     color: rgba(var(--header) var(--header-alpha));
     font-size: var(--font-size);
@@ -147,7 +155,8 @@ li {
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing-f1);
     background-color: rgba(0,0,0,0);
- }
+}
+				
 emp {
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing-f1);
@@ -156,30 +165,8 @@ emp {
     font-size: calc(var(--font-size) * var(--list-multiplier));
     font-family: var(--font2-family);
 }
+				
 h1, h2, h3, emp {
-  text-shadow:
-  /*
-  shadow-x, shadow-y, shadow-radius, shadow-color-rgba
-  Ray March effect
-     Draw a colored shadow at <x,y> position below the original text
-     each new shadow is darker and less opaque
-  */
-  calc(var(--shadow-x-max) * 1px) calc(var(--shadow-y-max) * 1px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha))),
-  calc(var(--shadow-x-max) * 2px) calc(var(--shadow-y-max) * 2px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha) - .2 )),
-  calc(var(--shadow-x-max) * 3px) calc(var(--shadow-y-max) * 3px) 0 rgba(calc(var(--header-r) * .8), calc(var(--header-g) * .8), calc(var(--header-b) * .8), calc(var(--header-alpha) - .3 )),
-  calc(var(--shadow-x-max) * 4px) calc(var(--shadow-y-max) * 4px) 0 rgba(calc(var(--header-r) * .8), calc(var(--header-g) * .8), calc(var(--header-b) * .8), calc(var(--header-alpha) - .4 )),
-  /* Hard Shadow
-     ground layer, doesnt have to be a shadow can be screen-space reflection
-  */
-  calc(var(--shadow-x-max) * 8px) calc(var(--shadow-y-max) * 8px) 0 rgba(calc(var(--shadow-r) * .9), calc(var(--shadow-g) * .9), calc(var(--shadow-b) * .9), calc(var(--header-alpha))),
-  /* Soft Shadow
-    another shadow layer
-  */
-  calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--shadow-r), var(--shadow-g), var(--shadow-b), var(--shadow-alpha)),
-  /* Glow - illumination
-    a glow layer - attcach to text pos
-  */
-  calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--header-r), var(--header-g), var(--header-b), var(--header-brightness));
   text-indent: 5% each-line;
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing-f1);
