@@ -89,7 +89,7 @@ body {
     margin-right: var(--margin);
     margin-left: var(--margin);
 }
-.flex-container {
+.container {
     font-family: var(--font2-family);
     display: flex;
     flex-direction: column;
@@ -434,7 +434,7 @@ h1, h2, h3, emp {
        ;}
 }
 </style>
-<div class="flex-container">
+<div class="container">
 <h1>this is a demo</h1>
 <p>This is some text showing how the CSS converts readme into a webpage</p>
 <h2> look at these datas </h2>
