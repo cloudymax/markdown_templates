@@ -8,8 +8,6 @@
 <ul> Check Out My List:
 <li>this is an item in my list</li>
 <li>this item is <emp>emphasized</emp>
-<li>this one is done <emph>differently</emph>.</li>
-<li>and this one has a <a href="www.cataas.come">Link</a>
 </ul>
 </div>
 </div>
