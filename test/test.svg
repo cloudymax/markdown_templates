@@ -93,8 +93,8 @@ body {
     padding: var(--gloabl-padding);
 }
 html, body, svg, foreignObject, .container {
-    height: 100vh;
-    width: 500vw;
+    height: 200vh;
+    width: 100vw;
 }
 p {
     border: var(--border-radius) var(--border-style) var(--header);
