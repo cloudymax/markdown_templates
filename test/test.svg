@@ -2,13 +2,14 @@
 <foreignObject background-size="contain">
 <div xmlns="http://www.w3.org/1999/xhtml">
 <style>
+
 :root {
    /* background color */
    --bg-alpha:          1;
-   --bg-r:              1;
-   --bg-g:              1;
-   --bg-b:              1;
-   --bg:                rgba(var(--bg-r), var(--bg-b), var(--bg-g), var(--bg-alpha));
+   --bg-r:              10;
+   --bg-g:              10;
+   --bg-b:              10;
+   --bg:                rgb(var(--bg-r), var(--bg-b), var(--bg-g));
    /* header color */
    --header-alpha:      1;
    --header-g:          200;
@@ -78,28 +79,26 @@ body {
 }
 .container {
     font-family: var(--font2-family);
+    margin: auto;
     justify-content: inter-item;
     border: var(--border-radius) var(--border-style) var(--header);
     text-align: left;
     overflow: auto;
     padding: var(--gloabl-padding);
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    position: inherit;
-    background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
+    height: 90%;
+    width: 90%;
 }
 foreignObject {
     height: 100%;
     width: 100%;
     margin: 0;
-    position: inherit;
 }
 svg{
     height: 100%;
     width: 100%;
     margin: 0;
     position: inherit;
+    background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
 }
 html {
     height: 100%;
@@ -431,7 +430,6 @@ h1, h2, h3, emp {
         --shadow-y-max: -1.1;
        ;}
 }
-
 </style>
 <div class="container">
 <h1>this is a demo</h1>
