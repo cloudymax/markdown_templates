@@ -1,3 +1,3 @@
-<foreignObject background-size="contain" width="100" height="100">
+<foreignObject background-size="contain" width="100%" height="100%">
 <img src="https://github.com/cloudymax/markdown_templates/blob/main/test/test.svg"></a>
 </foreignObject>
