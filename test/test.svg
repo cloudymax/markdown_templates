@@ -179,6 +179,10 @@ emp {
     font-size: calc(var(--font-size) * var(--list-multiplier));
     font-family: var(--font2-family);
 }
+emph {
+  color: rgba(var(--pop-r), var(--pop-g), var(--pop-b), 0);
+  filter: brightness(100%);
+}
 a:link {
     color: rgba(var(--pop) var(--pop-alpha));
     text-decoration: none;
