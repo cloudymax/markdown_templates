@@ -98,7 +98,7 @@ svg{
     width: 100%;
     margin: 0;
     position: inherit;
-    background: linear-gradient(132deg, var(--shadow), var(--bg), var(--pop));
+    background: linear-gradient(132deg, var(--gradient-color1), var(--shadow), var(--gradient-color2));
     animation: Gradient 10s ease infinite;
     background-size: 400% 400%;
 }
