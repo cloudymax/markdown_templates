@@ -1,6 +1,7 @@
 <svg fill="none" height="100%" width="100%" viewbox="100%" xmlns="http://www.w3.org/2000/svg">
 <foreignObject background-size="contain" width="100%" height="100%">
 <div xmlns="http://www.w3.org/1999/xhtml">
+<style>
 :root {
    /* background color */
    --bg-alpha:          1;
@@ -77,6 +78,7 @@
   --list-decorator:    "> ";
   --margins:            2%;
  }
+
 body {
     padding: var(--gloabl-padding);
     background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
@@ -86,7 +88,8 @@ body {
     margin-bottom: var(--margin);
     margin-right: var(--margin);
     margin-left: var(--margin);
- }
+}
+</style>
 <div class="flex-container">
 <h1>this is a demo</h1>
 <p>This is some text showing how the CSS converts readme into a webpage</p>
