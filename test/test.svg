@@ -99,8 +99,7 @@ body {
     height: 100%;
     background: radial-gradient(circle farthest-corner at var(--gradient-x) var(--gradient-y), var(--gradient-color1) var(--gradient-c1-amt), var(--gradient-color2) var(--gradient-c2-amt));
     background-color: rgba(var(--bg-r), var(--bg-b), var(--bg-g), var(--bg-alpha));
-    background-size: 100% 100%;
-    animation: fadein 2s linear 1 forwards;
+    background-size: 200% 200%;
     border-color: var(--border-radius);
     border-radius: var(--border-radius);
     text-align: left;
