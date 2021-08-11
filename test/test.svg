@@ -4,7 +4,7 @@
 <style>
 :root {
    /* background color */
-   --bg-alpha:         .51;
+   --bg-alpha:         .5;
    --bg-r:              1;
    --bg-g:              1;
    --bg-b:              1;
@@ -87,6 +87,7 @@ body {
     margin-bottom: var(--margin);
     margin-right: var(--margin);
     margin-left: var(--margin);
+    color: rgba(var(--header-r), var(--header-g), var(--header-b), 1);
 }
 .flex-container {
     font-family: var(--font2-family);
