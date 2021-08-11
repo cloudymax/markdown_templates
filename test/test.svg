@@ -2,14 +2,13 @@
 <foreignObject background-size="contain">
 <div xmlns="http://www.w3.org/1999/xhtml">
 <style>
-
 :root {
   /* background color */
-  --bg-alpha:          1;
+  --bg-alpha:          .2;
   --bg-r:              10;
-  --bg-g:              10;
-  --bg-b:              10;
-  --bg:                rgb(var(--bg-r), var(--bg-b), var(--bg-g));
+  --bg-g:              36;
+  --bg-b:              45;
+  --bg:                rgba(var(--bg-r), var(--bg-g), var(--bg-b), var(--bg-alpha));
   /* header color */
   --header-alpha:      1;
   --header-g:          200;
@@ -24,17 +23,17 @@
   --pop-b:             255;
   --pop:               rgba(var(--pop-r), var(--pop-g), var(--pop-b), var(--pop-alpha));
   /* shadow color */
-  --shadow-alpha:      .8;
-  --shadow-r:          0;
-  --shadow-g:          10;
-  --shadow-b:          10;
+  --shadow-alpha:      .9;
+  --shadow-r:          6;
+  --shadow-g:          6;
+  --shadow-b:          6;
   --shadow:            rgba(var(--shadow-r), var(--shadow-g), var(--shadow-b), var(--shadow-alpha));
   /* background gradient */
-  --gradient-color1:   rgba(0, 0, 0, 1);
+  --gradient-color1:   rgba(16, 10, 30, 1);
   --gradient-c1-amt:   80%;
-  --gradient-color2:   rgba(255, 255, 255, 1);
+  --gradient-color2:   rgba(15, 15, 20, 1);
   --gradient-c2-amt:   90%;
-  --gradient-x:        -101.8%;
+  --gradient-x:        -10.8%;
   --gradient-y:        -50.3%;
   /* Fonts */
   --font1-family:      'Source Code Pro', monospace;
@@ -53,6 +52,7 @@
   /* Borders */
   --border-radius:      5px;
   --border-style:       outset;
+    
   /* Shadows */
   --shadow-x-max:       .3;
   --shadow-y-max:       1;
@@ -81,7 +81,7 @@ body {
     font-family: var(--font2-family);
     margin: auto;
     justify-content: inter-item;
-    border: var(--border-radius) var(--border-style) var(--header);
+    border: var(--border-radius) var(--border-style) var(--shadow);
     text-align: left;
     overflow: hidden;
     padding: var(--gloabl-padding);
@@ -92,6 +92,7 @@ foreignObject {
     height: 100%;
     width: 100%;
     margin: 0;
+    background: var(--pop);
 }
 svg{
     height: 100%;
@@ -101,6 +102,7 @@ svg{
     background: linear-gradient(132deg, var(--gradient-color1), var(--shadow), var(--gradient-color2));
     animation: Gradient 10s ease infinite;
     background-size: 400% 400%;
+    background-color: var(--bg);
 }
 html {
     height: 100%;
@@ -113,7 +115,7 @@ body {
     margin: 0;
 }
 p {
-    border: var(--border-radius) var(--border-style) var(--header);
+    border: var(--border-radius) var(--border-style) var(--shadow);
     font-family: var(--font2-family);
     text-indent: 0%;
     text-align: justify;
@@ -153,6 +155,12 @@ ul {
     justify-content: inter-item;
     list-style-type: var(--list-decorator);
     list-style-position: inside;
+    text-shadow:
+    calc(var(--shadow-x-max) * 1px) calc(var(--shadow-y-max) * 1px) 0 rgba(calc(var(--pop-r) * .9), calc(var(--pop-g) * .9), calc(var(--pop-b) * .9), calc(var(--pop-alpha) / 1 )),
+    calc(var(--shadow-x-max) * 2px) calc(var(--shadow-y-max) * 2px) 0 rgba(calc(var(--pop-r) * .9), calc(var(--pop-g) * .9), calc(var(--pop-b) * .9), calc(var(--pop-alpha) / 2 )),
+    calc(var(--shadow-x-max) * 3px) calc(var(--shadow-y-max) * 3px) 0 rgba(calc(var(--pop-r) * .9), calc(var(--pop-g) * .9), calc(var(--pop-b) * .9), calc(var(--pop-alpha) / 2 )),
+    calc(var(--shadow-x-max) * 8px) calc(var(--shadow-y-max) * 8px) 0 rgba(calc(var(--shadow-r) * .9), calc(var(--shadow-g) * .9), calc(var(--shadow-b) * .9), calc(var(--shadow-alpha))),
+    calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--shadow-r), var(--shadow-g), var(--shadow-b), var(--shadow-alpha));
 }
 ol {
     color: var(--pop);
@@ -172,6 +180,11 @@ li {
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing-f1);
     background-color: rgba(0,0,0,0);
+    text-shadow:
+    calc(var(--shadow-x-max) * 1px) calc(var(--shadow-y-max) * 1px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha) / 1 )),
+    calc(var(--shadow-x-max) * 1px) calc(var(--shadow-y-max) * 1px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha) / 2 )),
+    calc(var(--shadow-x-max) * 8px) calc(var(--shadow-y-max) * 8px) 0 rgba(calc(var(--shadow-r) * .9), calc(var(--shadow-g) * .9), calc(var(--shadow-b) * .9), calc(var(--shadow-alpha))),
+    calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--shadow-r), var(--shadow-g), var(--shadow-b), var(--shadow-alpha));
 }
 emp {
     line-height: var(--line-height);
@@ -206,7 +219,6 @@ a:hover, emph {
 }
 h1, h2, h3, emp {
   text-shadow:
-  animation: fadein 1s ease forwards, lift-up 1s ease forwards, march .5s ease forwards;
   calc(var(--shadow-x-max) * 1px) calc(var(--shadow-y-max) * 1px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha))),
   calc(var(--shadow-x-max) * 2px) calc(var(--shadow-y-max) * 2px) 0 rgba(calc(var(--header-r) * .9), calc(var(--header-g) * .9), calc(var(--header-b) * .9), calc(var(--header-alpha) - .2 )),
   calc(var(--shadow-x-max) * 3px) calc(var(--shadow-y-max) * 3px) 0 rgba(calc(var(--header-r) * .8), calc(var(--header-g) * .8), calc(var(--header-b) * .8), calc(var(--header-alpha) - .3 )),
@@ -214,6 +226,7 @@ h1, h2, h3, emp {
   calc(var(--shadow-x-max) * 8px) calc(var(--shadow-y-max) * 8px) 0 rgba(calc(var(--shadow-r) * .9), calc(var(--shadow-g) * .9), calc(var(--shadow-b) * .9), calc(var(--header-alpha))),
   calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--shadow-r), var(--shadow-g), var(--shadow-b), var(--shadow-alpha)),
   calc(var(--shadow-x-max) * 9px) calc(var(--shadow-y-max) * 9px) var(--shadow-radius) rgba(var(--header-r), var(--header-g), var(--header-b), var(--header-brightness));
+  animation: fadein 1s ease forwards, lift-up 1s ease forwards, march .5s ease forwards;
   text-indent: 5% each-line;
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing-f1);
