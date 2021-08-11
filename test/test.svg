@@ -30,9 +30,9 @@
    --shadow-b:          10;
    --shadow:            rgba(var(--shadow-r), var(--shadow-g), var(--shadow-b), var(--shadow-alpha));
    /* background gradient */
-   --gradient-color1:   rgba(30, 30, 30, 1);
+   --gradient-color1:   rgba(0, 0, 0, 1);
    --gradient-c1-amt:   80%;
-   --gradient-color2:   rgba(32, 36, 49, 1);
+   --gradient-color2:   rgba(255, 255, 255, 1);
    --gradient-c2-amt:   90%;
    --gradient-x:        -101.8%;
    --gradient-y:        -50.3%;
