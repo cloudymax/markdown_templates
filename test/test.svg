@@ -85,7 +85,7 @@ body {
     text-align: left;
     overflow: hidden;
     padding: var(--gloabl-padding);
-    height: 90%;
+    height: 200vh;
     width: 90%;
 }
 foreignObject {
