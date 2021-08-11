@@ -99,7 +99,7 @@ svg{
     margin: 0;
     position: inherit;
     background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
-    animation: gradientBackground 10s ease infinite;
+    animation: Gradient 10s ease infinite;
     background-size: 400% 400%;
 }
 html {
