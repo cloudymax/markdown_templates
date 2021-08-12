@@ -50,9 +50,8 @@
   --list-multiplier:    1.2;
   --link-multiplier:    1;
   /* Borders */
-  --border-radius:      5px;
-  --border-style:       outset;
-    
+  --border-radius:      1px;
+  --border-style:       dashed;
   /* Shadows */
   --shadow-x-max:       .3;
   --shadow-y-max:       1;
