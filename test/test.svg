@@ -83,7 +83,7 @@ body {
     justify-content: inter-item;
     border: var(--border-radius) var(--border-style) var(--shadow);
     text-align: left;
-    overflow: hidden;
+    overflow: scroll;
     padding: var(--gloabl-padding);
     height: 200vh;
     width: 90%;
