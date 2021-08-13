@@ -1,15 +1,4 @@
-# markdown to svg static webpage tool
-
-converts a markdown readme file into a static webpage inside of a SVG.
-allows you to use CSS and in-line html w/ markdown to make a full webpage.
-
-Why? fun with github readmes, small file web pages, host a webpage from a blob storage bucket,
-use an svg w/ css as a UI in unity engine.
-
-WIP.
-
-
-## flow
+# flow
 
 - original markdown file holds your notes/structure
 - originla markdown gets converted to html
