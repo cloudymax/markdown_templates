@@ -8,6 +8,7 @@ use an svg w/ css as a UI in unity engine.
 
 WIP.
 
+https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/
 
 ## flow
 
